@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="comics_recycler_height">207dp</dimen>
+    <dimen name="inner_event_margin">8dp</dimen>
+    <dimen name="item_corner">6dp</dimen>
+    <dimen name="list_item_offset">4dp</dimen>
+    <dimen name="comics_recycler_width">100dp</dimen>
+    <dimen name="comics_background_img_height">210dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_top_margin">154dp</dimen>
+    <dimen name="icons_margin_top">20dp</dimen>
+</resources>

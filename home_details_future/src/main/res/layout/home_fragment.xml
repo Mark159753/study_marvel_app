@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/home_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionGroup="true"
+    tools:context=".home.HomeFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/home_appbar"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/home_collapsing_container"
+            app:layout_scrollFlags="scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_logo_marvel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/horizontal_margin"
+                app:cardBackgroundColor="@color/marvel_secondary_red_color"
+                app:cardCornerRadius="@dimen/corner_radius"
+                tools:background="@color/marvel_secondary_red_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/marvel"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="@string/marvel"
+                    android:textColor="@android:color/white"
+                    android:textSize="110sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/home_comics_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontal_margin"
+                android:layout_marginTop="26dp"
+                android:text="Best Selling Comics"
+                android:textAppearance="@style/MarvelTextTitle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comics_horizontal_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comics_recycler_height"
+                android:layout_marginTop="8dp"
+                android:clipChildren="false"
+                tools:listitem="@layout/comics_item" />
+
+            <TextView
+                android:id="@+id/home_event_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/horizontal_margin"
+                android:layout_marginTop="26dp"
+                android:text="@string/last_events"
+                android:textAppearance="@style/MarvelTextTitle" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:clipChildren="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/event_item" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="marvel_primary_red_color">#DB101A</color>
+    <color name="marvel_secondary_red_color">#DD4754</color>
+
+    <color name="comics_details_background">#A8EAE3</color>
+</resources>

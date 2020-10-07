@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="marvel">MARVEL</string>
+    <string name="last_events">Last Events</string>
+
+    <string name="small_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="my_retry">retry</string>
+    <string name="unknown">Unknown</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Description</string>
+    <string name="pages">pages</string>
+    <string name="no_description">Have not Description</string>
+    <string name="transition_comics">transition_comics_</string>
+</resources>

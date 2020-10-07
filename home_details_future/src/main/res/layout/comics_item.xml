@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/comics_recycler_width"
+    android:layout_height="@dimen/comics_recycler_height"
+    android:clipChildren="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/comics_poster_holder"
+        android:layout_width="@dimen/comics_recycler_width"
+        android:layout_height="142dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="@dimen/item_corner">
+        <ImageView
+            android:id="@+id/comics_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/comics_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comics_poster_holder"
+        tools:text="Civil War"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textAppearance="@style/MarvelTextTitle"/>
+    <TextView
+        android:id="@+id/comics_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comics_name"
+        android:textSize="14sp"
+        android:lines="2"
+        tools:text="Stuart Moore kbb l j"/>
+</RelativeLayout>

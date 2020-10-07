@@ -8,6 +8,7 @@
 - **Dependency injection with Dagger 2**
 - **Kotlin Coroutines**
 - **Gradle Kotlin DSL**
+- **Paging 3**
 
 ## Quick start
 1. Create Marvel DEVELOPER ACCOUNT and get Your public and private keys in https://developer.marvel.com/
